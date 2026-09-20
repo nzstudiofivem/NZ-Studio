@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accueil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="accueil">
 
+  <div id="entete"></div>
+
+  <main class="conteneur">
+
+    <section class="banniere">
+      <svg class="banniere-grand-logo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+      <div class="banniere-texte">
+        <h1>Toutes tes ressources au même endroit</h1>
+        <p>Armes, scripts, maps et véhicules. Choisis une catégorie pour tout voir.</p>
+        <a class="bouton" href="categorie.html?cat=tout">Voir les ressources</a>
+      </div>
+    </section>
+
+    <section class="accueil-grille">
+      <aside class="panneau">
+        <div class="panneau-titre">Nos ressources</div>
+        <nav class="liste-categories" id="liste-categories" aria-label="Catégories"></nav>
+      </aside>
+      <div id="une" class="une"></div>
+    </section>
+
+    <section>
+      <div class="page-entete" style="padding-top:0">
+        <h2 style="font-size:1.8rem">Dernières ressources</h2>
+      </div>
+      <div class="grille" id="recentes"></div>
+    </section>
+
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur">© <span id="annee"></span> - Tous droits réservés</div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
